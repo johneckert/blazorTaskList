@@ -6,22 +6,30 @@
 <div class="list-box">
     <h1>@Title</h1>
     <ul>
-        @for (var i = 0; i < ListItems.Count; i++) {
-            <li>
-                <input type="text" value="@ListItems[i]" />
-            </li>
+        @foreach (var listItem in listItems) {
+            <li>@listItem.Content</li>
         }
     </ul>
+
+    <input placeholder="..." bind="@newItem" />
     <button class="add-item" onclick="@AddItem">+</button>
 </div>
 
 @functions {
     [Parameter]
     private string Title { get; set; }
+    
+    private string newItem;
 
-    ArrayList ListItems = new ArrayList();
+    private IList<ListItem> listItems = new List<ListItem>();
 
-    void AddItem() {
-        ListItems.Add("");
+    
+    private void AddItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newItem))
+        {
+            listItems.Add(new ListItem { Content = newItem });
+            newItem = string.Empty;
+        }
     }
 }

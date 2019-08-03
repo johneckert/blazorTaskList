@@ -77,6 +77,6 @@
 /Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/blazor/inputs.bootjson.cache
 /Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/blazor/blazor.boot.json
 /Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/Pages/List.g.i.cs
-/Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/Pages/List.g.cs
 /Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/Pages/ListPage.g.i.cs
+/Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/Pages/List.g.cs
 /Users/John/Development/Projects/blazorTaskList/obj/Debug/netstandard2.0/Pages/ListPage.g.cs
