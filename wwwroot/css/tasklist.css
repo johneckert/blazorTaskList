@@ -1,0 +1,50 @@
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding: 5%;
+}
+
+.list-box {
+    border: grey 1px solid;
+    border-radius: 5%;
+    padding:  2% 5%;
+    min-height: 20rem;
+}
+
+.list-box ul {
+    
+}
+
+.list-box input {
+    border-bottom: grey 2px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.list-box input:focus {
+    border-bottom: orangered 2px solid;
+    outline: none;
+}
+
+.list-box button {
+    border-radius: 50%;
+    border-color: orangered;
+    width: 3rem;
+    height: 3rem;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.list-box button:hover {
+    border-color: orange;
+    background-color: orange;
+}
+
+.list-box button span {
+    margin: auto;
+}
