@@ -24,6 +24,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages/ListPage.cshtml",
+      "TargetPath": "Pages/ListPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages/Counter.cshtml",
       "TargetPath": "Pages/Counter.cshtml",
       "FileKind": "mvc"
@@ -46,6 +51,11 @@
     {
       "FilePath": "Shared/NavMenu.cshtml",
       "TargetPath": "Shared/NavMenu.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/List.cshtml",
+      "TargetPath": "Pages/List.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,27 @@
+@using System;
+@using System.Collections;
+
+@page "/list"
+
+<div class="list-box">
+    <h1>@Title</h1>
+    <ul>
+        @for (var i = 0; i < ListItems.Count; i++) {
+            <li>
+                <input type="text" value="@ListItems[i]" />
+            </li>
+        }
+    </ul>
+    <button class="add-item" onclick="@AddItem">+</button>
+</div>
+
+@functions {
+    [Parameter]
+    private string Title { get; set; }
+
+    ArrayList ListItems = new ArrayList();
+
+    void AddItem() {
+        ListItems.Add("");
+    }
+}
