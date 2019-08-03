@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/John/Development/Projects/blazorTaskList/blazorTaskList.csproj": {}
+  },
+  "projects": {
+    "/Users/John/Development/Projects/blazorTaskList/blazorTaskList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/John/Development/Projects/blazorTaskList/blazorTaskList.csproj",
+        "projectName": "blazorTaskList",
+        "projectPath": "/Users/John/Development/Projects/blazorTaskList/blazorTaskList.csproj",
+        "packagesPath": "/Users/John/.nuget/packages/",
+        "outputPath": "/Users/John/Development/Projects/blazorTaskList/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/John/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor.Browser": {
+              "target": "Package",
+              "version": "[0.7.0, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.7.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
