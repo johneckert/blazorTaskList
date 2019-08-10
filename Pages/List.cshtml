@@ -45,7 +45,22 @@
 
     private void ToggleComplete(Guid id) {
         var CurrentItem = listItems.First(item => item.ID == id);
+        var oldIndex = listItems.IndexOf(CurrentItem);
+        var listLength = 0;
+        foreach (var el in listItems ) {
+            listLength++;
+        }
+
         CurrentItem.Complete = !CurrentItem.Complete;
+
+        if (CurrentItem.Complete) {
+            listItems.RemoveAt(oldIndex);
+            listItems.Insert(listLength - 1, CurrentItem);
+        }
+        else {
+            listItems.RemoveAt(oldIndex);
+            listItems.Insert(0, CurrentItem);
+        }
     }
 
     public class ListItem {
