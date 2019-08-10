@@ -1,50 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,900&display=swap');
+
 .list-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: auto;
     padding: 5%;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .list-box {
-    border: grey 1px solid;
+    position: relative;
+    border: grey 3px solid;
     border-radius: 5%;
-    padding:  2% 5%;
+    padding:  1% 2% 2% 2%;
     min-height: 20rem;
+    font-size: 1.3rem;
+    min-width: 14rem;
+    margin: auto;
+}
+
+.list-box h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #444444;
+    padding: 0;
+    margin: 0;
 }
 
 .list-box ul {
-    
+    list-style-type: square;
+    margin: 0 0 0 2.5rem;
+    padding: 0;
 }
 
-.list-box input {
+.list-box li {
+    padding-top: 0.5rem;
+}
+
+.list-box li:hover {
+    color: orangered;
+}
+
+.list-box .add-item-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 1rem 0;
+
+}
+
+.list-box .add-item-container input {
     border-bottom: grey 2px solid;
     border-left: none;
     border-right: none;
     border-top: none;
+    width: 70%;
+    font-size: 1.3rem;
 }
 
-.list-box input:focus {
+.list-box .add-item-container input:focus {
     border-bottom: orangered 2px solid;
     outline: none;
 }
 
-.list-box button {
+.list-box .add-item-container button {
     border-radius: 50%;
-    border-color: orangered;
-    width: 3rem;
-    height: 3rem;
-    background-color: orangered;
+    border-color: grey;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: grey;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
+    margin-left: 1rem;
 }
 
-.list-box button:hover {
-    border-color: orange;
-    background-color: orange;
+.list-box .add-item-container button:hover {
+    border-color: orangered;
+    background-color: orangered;
 }
 
-.list-box button span {
-    margin: auto;
+.list-box .add-item-container button span {
+    margin-left: -0.1rem;
+    margin-top: -0.5rem;
+}
+
+.strike-through {
+    text-decoration: line-through !important;
 }

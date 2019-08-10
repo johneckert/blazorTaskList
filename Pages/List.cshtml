@@ -1,5 +1,4 @@
 @using System;
-@using System.Collections;
 
 @page "/list"
 
@@ -7,12 +6,13 @@
     <h1>@Title</h1>
     <ul>
         @foreach (var listItem in listItems) {
-            <li>@listItem.Content</li>
+            <li class="@CrossedOut(listItem.ID)" onclick="@(() => ToggleComplete(listItem.ID))">@listItem.Content</li>
         }
     </ul>
-
-    <input placeholder="..." bind="@newItem" />
-    <button class="add-item" onclick="@AddItem"><span>+</span></button>
+    <div class="add-item-container">
+        <input placeholder="" bind="@newItem" />
+        <button class="add-item" onclick="@AddItem"><span>+</span></button>
+    </div>
 </div>
 
 @functions {
@@ -28,8 +28,30 @@
     {
         if (!string.IsNullOrWhiteSpace(newItem))
         {
-            listItems.Add(new ListItem { Content = newItem });
+            listItems.Add(new ListItem { Content = newItem, Complete = false, ID = Guid.NewGuid() });
             newItem = string.Empty;
         }
     }
+
+    private string CrossedOut(Guid id) {
+        var CurrentItem = listItems.First(item => item.ID == id);
+        if (CurrentItem.Complete) {
+            return "strike-through";
+        }
+        else {
+            return "";
+        }
+    }
+
+    private void ToggleComplete(Guid id) {
+        var CurrentItem = listItems.First(item => item.ID == id);
+        CurrentItem.Complete = !CurrentItem.Complete;
+    }
+
+    public class ListItem {
+        public Guid ID {get; set; }
+        public string Content { get; set; }
+        public bool Complete { get; set; }
+    }
+
 }
