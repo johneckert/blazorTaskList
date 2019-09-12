@@ -4,8 +4,8 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/John/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/John/.nuget/packages/;/usr/local/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/johneckert/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/johneckert/.nuget/packages/;/usr/local/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.2.0</NuGetToolVersion>
   </PropertyGroup>
@@ -17,7 +17,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.blazor.build/0.7.0/build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.blazor.build/0.7.0/build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_AspNetCore_Razor_Design Condition=" '$(PkgMicrosoft_AspNetCore_Razor_Design)' == '' ">/Users/John/.nuget/packages/microsoft.aspnetcore.razor.design/2.1.2</PkgMicrosoft_AspNetCore_Razor_Design>
-    <PkgMicrosoft_AspNetCore_Blazor_Build Condition=" '$(PkgMicrosoft_AspNetCore_Blazor_Build)' == '' ">/Users/John/.nuget/packages/microsoft.aspnetcore.blazor.build/0.7.0</PkgMicrosoft_AspNetCore_Blazor_Build>
+    <PkgMicrosoft_AspNetCore_Razor_Design Condition=" '$(PkgMicrosoft_AspNetCore_Razor_Design)' == '' ">/Users/johneckert/.nuget/packages/microsoft.aspnetcore.razor.design/2.1.2</PkgMicrosoft_AspNetCore_Razor_Design>
+    <PkgMicrosoft_AspNetCore_Blazor_Build Condition=" '$(PkgMicrosoft_AspNetCore_Blazor_Build)' == '' ">/Users/johneckert/.nuget/packages/microsoft.aspnetcore.blazor.build/0.7.0</PkgMicrosoft_AspNetCore_Blazor_Build>
   </PropertyGroup>
 </Project>
